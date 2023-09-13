@@ -1,0 +1,24 @@
+body {
+    background-image: url("../assets/background/yellow-pattern-bg.svg");
+    margin: 0 8px;
+}
+
+main {
+    background-color: var(--darker-blue);
+}
+
+/* Content styling */
+.content article:nth-child(odd) {
+    background-color: var(--dark-blue);
+}
+
+article {
+    padding: 16px;
+}
+
+.quote {
+    font-style: italic;
+    font-weight: 300;
+}
+
+

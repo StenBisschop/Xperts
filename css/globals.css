@@ -1,8 +1,62 @@
-/* 
-dit is het globale css bestand 
-hier in zitten de default styles zoals h1, h2 ,3 etc
-*/
-
-body {
-    background: paleturquoise;
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Karla:ital,wght@0,200;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+/* reset standard margins and padding and box sizing, this makes styling easier */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+/* Variables */
+:root {
+    /* Colors */
+    --purple: #4B46FA;
+    --yellow: #FFA200;
+    --green: #52DC8E;
+    --red: #FF3E6B;
+    --blue: #61BFC1;
+    --white: #FFFFFF;
+    --black: #050110;
+    --darkest-blue: #101824;
+    --darker-blue: #192638;
+    --dark-blue: #203046;
+
+    /* Fonts*/
+    --base-font: 'Karla', sans-serif;
+    --text-font: 'Inconsolata', monospace;
+}
+
+/* Default styles */
+body {
+    background-color: var(--black);
+    background-image: url("../assets/background/base-pattern-bg.svg");
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: var(--base-font);
+    color: var(--white);
+}
+
+h1 {
+    font-weight: 500;
+}
+
+h2 {
+
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Paragraphs */
+p {
+    font-family: var(--text-font);
+    color: var(--white);
+    font-size: 0.875rem;
+}
+
+
+
