@@ -15,8 +15,14 @@
     <link rel="stylesheet" href="../css/globals.css">
     <link rel="stylesheet" href="../css/yellow.css">
     <title>Xperts - Sten</title>
+    <!-- Remove hosting branding mark -->
+    <script>
+        function onLoad() {
+            document.getElementsByTagName("div")[document.getElementsByTagName("div").length -1].innerHTML = ""
+        }
+    </script>
 </head>
-<body>
+<body onload="javascript:onLoad()">
 <header>
     <img src="" alt="">
     <h3>Sten</h3>

@@ -15,8 +15,14 @@
     <link rel="stylesheet" href="../css/globals.css">
     <link rel="stylesheet" href="../css/green.css">
     <title>Xperts - Sirat</title>
+    <!-- Remove hosting branding mark -->
+    <script>
+        function onLoad() {
+            document.getElementsByTagName("div")[document.getElementsByTagName("div").length -1].innerHTML = ""
+        }
+    </script>
 </head>
-<body>
+<body onload="javascript:onLoad()">
 <img src="../assets/images/Accountancy.jpg" alt="Accountant" width="600px">
     <h1>Rollen van IT in Accountancy</h1>
     <h2>Op deze webpagina wordt het effect en de rollen van IT binnen het Accountancy vakgebied toegelicht.</h2>
