@@ -1,3 +1,23 @@
 body {
     background-image: url("../assets/background/red-pattern-bg.svg");
+    margin: 0 20px;
+}
+
+main {
+    background-color: var(--darker-blue);
+    width: 60%;
+}
+
+/* content styling */
+.content article:nth-child(odd) {
+    background-color: var(--dark-blue);
+}
+
+article {
+    padding: 14px;
+}
+
+.qoute {
+    font-style: italic;
+    font-weight: 300;
 }
