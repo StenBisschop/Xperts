@@ -4,13 +4,13 @@ body {
 }
 
 main {
-    background-color: var(--darker-blue);
+    background-color: red;
     width: 60%;
 }
 
 /* content styling */
 .content article:nth-child(odd) {
-    background-color: var(--dark-blue);
+    background-color: darkred;
 }
 
 article {
