@@ -32,6 +32,11 @@ body {
     background-image: url("../assets/background/base-pattern-bg.svg");
 }
 
+nav {
+    position: fixed;
+    right: 5%;
+}
+
 /* Headings */
 h1, h2, h3 {
     font-family: var(--base-font);
