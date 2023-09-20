@@ -1,3 +1,8 @@
 body {
     background-image: url("../assets/background/green-pattern-bg.svg");
 }
+
+.logo {
+    margin: 0 auto;
+
+}
