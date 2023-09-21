@@ -4,13 +4,20 @@ body {
 }
 
 main {
-    background-color: var(--darker-blue);
+    background-color: var(--dark-red);
     width: 60%;
 }
 
+nav {
+    padding: 14px;
+    background-color: rgba(0, 0, 0, 0.253);
+    width: auto;
+}
+
+
 /* content styling */
 .content article:nth-child(odd) {
-    background-color: var(--dark-blue);
+    background-color: var(--darker-red);
 }
 
 article {
