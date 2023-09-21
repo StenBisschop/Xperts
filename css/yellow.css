@@ -3,17 +3,23 @@ body {
     margin: 0 8px;
 }
 
-main {
+.content {
+    max-width: 1000px;
     background-color: var(--darker-blue);
 }
 
 /* Content styling */
 .content article:nth-child(odd) {
-    background-color: var(--dark-blue);
+    background-color: var(--darkest-blue);
 }
 
 article {
     padding: 16px;
+}
+
+.content span {
+    color: var(--yellow);
+    background-color: var(--yellow-transparent);
 }
 
 .quote {
