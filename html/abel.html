@@ -17,8 +17,19 @@
     <title>Xperts - Abel</title>
     <!-- security -->
     <script src="../scripts/security.js"></script>
+    <script src="../scripts/menu.js"></script>
 </head>
 <body>
+<!-- navigation -->
+<div id="navigation-container"></div>
+<script>
+    // Load the navigation component into the container
+    fetch('./nav.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navigation-container').innerHTML = data;
+        });
+</script>
     <h1>Abel</h1>
     <h3>Wat is mijn beroepenveld?</h3>
     <p> Ik doe de studie mens en techniek/gezondheidszorgtechnologie. Hierbij zou ik gezondheidszorgtechnoloog worden. Als gezondheidszorgtechnoloog ben je werkzaam op het snijvlak van gezondheidszorg en techniek. Je bent gespecialiseerd in zowel de gezondheidszorg als de techniek. (YouChooz, 2020) Het werkveld is dus erg breed. Alles wat met innovatie en de gezondheidszorg heeft te maken. </p>
