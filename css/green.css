@@ -10,3 +10,29 @@ body {
 h1 {
     color: var(--green);
 }
+
+main {
+    background-color: var(--dark-red);
+    width: 60%;
+}
+
+nav {
+    padding: 14px;
+    background-color: rgba(0, 0, 0, 0.253);
+    width: auto;
+}
+
+
+/* content styling */
+.content article:nth-child(odd) {
+    background-color: var(--darker-red);
+}
+
+article {
+    padding: 14px;
+}
+
+.qoute {
+    font-style: italic;
+    font-weight: 300;
+}
