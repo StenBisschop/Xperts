@@ -2,17 +2,12 @@ body {
     background-image: url("../assets/background/green-pattern-bg.svg");
 }
 
-.logo {
-    margin: 0 auto;
-
-}
-
 h1 {
     color: var(--green);
 }
 
 main {
-    background-color: var(--green);
+    background-color: var(--darker-green);
     width: 60%;
 }
 
