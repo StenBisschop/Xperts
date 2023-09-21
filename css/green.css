@@ -12,7 +12,7 @@ h1 {
 }
 
 main {
-    background-color: var(--dark-red);
+    background-color: var(--green);
     width: 60%;
 }
 
@@ -25,7 +25,7 @@ nav {
 
 /* content styling */
 .content article:nth-child(odd) {
-    background-color: var(--darker-red);
+    background-color: var(--green);
 }
 
 article {
