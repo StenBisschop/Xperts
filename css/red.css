@@ -4,7 +4,7 @@ body {
 }
 
 main {
-    background-color: var(--dark-red);
+    background-color: var(--darker-blue);
     width: 60%;
 }
 
@@ -17,7 +17,7 @@ nav {
 
 /* content styling */
 .content article:nth-child(odd) {
-    background-color: var(--darker-red);
+    background-color: var(--darkest-blue);
 }
 
 article {
