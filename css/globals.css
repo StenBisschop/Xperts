@@ -12,7 +12,9 @@
     /* Colors */
     --purple: #4B46FA;
     --yellow: #FFA200;
-    --green: #52DC8E;
+    --yellow-transparent: #FFA20014;
+    --green: #269b59;
+    --darker-green: #0a9245;
     --red: #FF3E6B;
     --dark-red: #520101;
     --darker-red: #2e0000;
