@@ -1,33 +1,28 @@
 body {
-    background-image: url("../assets/background/green-pattern-bg.svg");
+    background-image: url("../assets/background/yellow-pattern-bg.svg");
+    margin: 0 8px;
 }
 
-h1 {
-    color: var(--green);
+.content {
+    max-width: 1000px;
+    background-color: var(--darker-blue);
 }
 
-main {
-    background-color: var(--darker-green);
-    width: 60%;
-}
-
-nav {
-    padding: 14px;
-    background-color: rgba(0, 0, 0, 0.253);
-    width: auto;
-}
-
-
-/* content styling */
+/* Content styling */
 .content article:nth-child(odd) {
-    background-color: var(--green);
+    background-color: var(--darkest-blue);
 }
 
 article {
-    padding: 14px;
+    padding: 16px;
 }
 
-.qoute {
+.content span {
+    color: var(--darker-green);
+    background-color: var(--green);
+}
+
+.quote {
     font-style: italic;
     font-weight: 300;
 }
