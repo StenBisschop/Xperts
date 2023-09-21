@@ -10,13 +10,10 @@ main {
 
 nav {
     padding: 14px;
-    background-color: rgba(255, 0, 0, 0.253);
+    background-color: rgba(0, 0, 0, 0.253);
     width: auto;
 }
 
-a {
-    text-emphasis-color: white;
-}
 
 /* content styling */
 .content article:nth-child(odd) {
