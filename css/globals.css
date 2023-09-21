@@ -23,7 +23,7 @@
     --darker-blue: #192638;
     --dark-blue: #203046;
 
-    /* Fonts */
+    /* Fonts*/
     --base-font: 'Karla', sans-serif;
     --text-font: 'Inconsolata', monospace;
 }
@@ -63,11 +63,6 @@ p {
     font-family: var(--text-font);
     color: var(--white);
     font-size: 0.875rem;
-}
-
-/* Button styles */
-.button {
-
 }
 
 

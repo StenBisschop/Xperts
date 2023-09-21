@@ -15,24 +15,25 @@
     <link rel="stylesheet" href="../css/globals.css">
     <link rel="stylesheet" href="../css/red.css">
     <title>Xperts - Max</title>
-    <!-- security -->
-    <script src="../scripts/security.js"></script>
-    <script src="../scripts/menu.js"></script>
+    <link rel="stylesheet" href="./css/globals.css">
+    <title>Xperts</title>
 </head>
 <body>
 <header>
     <img src="..\assets\svg\xperts-logo.svg" alt="xperts logo">
 </header>
-<!-- navigation -->
-<div id="navigation-container"></div>
-<script>
-    // Load the navigation component into the container
-    fetch('./nav.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('navigation-container').innerHTML = data;
-        });
-</script>
+<nav>
+    <p>Navigatie</p>
+    <a href="./sirat.html">Sirat</a>
+    <hr width="200">
+    <a href="../index.html">Hoofdpagina</a>
+    <hr width="200">
+    <a href="./abel.html">Abel</a>
+    <hr width="200">
+    <a href="./sten.html">Sten</a>
+    <hr width="200">
+    <br>
+</nav>   
     <main>
         <div class ="content">
             <article>
