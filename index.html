@@ -16,11 +16,22 @@
     <title>Xperts</title>
     <!-- security -->
     <script src="./scripts/security.js"></script>
+    <script src="./scripts/menu.js" defer></script>
 </head>
 <body>
 <header>
     <img src="./assets/svg/xperts-logo.svg" alt="xperts logo">
 </header>
+<!-- navigation -->
+<div id="navigation-container"></div>
+<script>
+    // Load the navigation component into the container
+    fetch('./html/nav.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navigation-container').innerHTML = data;
+        });
+</script>
 <main>
     <p>
         Kies één van de Xperts, iedere Xpert heeft een eigen kleur
@@ -29,10 +40,10 @@
         <span>X</span>
         <span>X</span>
     </p>
-    <a href="./html/sirat.html">Sirat</a>
-    <a href="./html/max.html">Max</a>
     <a href="./html/abel.html">Abel</a>
     <a href="./html/sten.html">Sten</a>
+    <a href="./html/sirat.html">Sirat</a>
+    <a href="./html/max.html">Max</a>
 </main>
 <footer>
     <a href="https://canvas.hu.nl/courses/41216" target="_blank">Canvas</a>

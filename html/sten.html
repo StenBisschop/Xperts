@@ -17,7 +17,18 @@
     <title>Xperts - Sten</title>
     <!-- security -->
     <script src="../scripts/security.js"></script>
+    <script src="../scripts/menu.js"></script>
 </head>
+<!-- navigation -->
+<div id="navigation-container"></div>
+<script>
+    // Load the navigation component into the container
+    fetch('./nav.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navigation-container').innerHTML = data;
+        });
+</script>
 <body>
 <header>
     <img src="" alt="">
@@ -40,6 +51,5 @@
         </article>
     </div>
 </main>
-<div style="color: red">hallo reclame</div>
 </body>
 </html>

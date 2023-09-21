@@ -17,9 +17,19 @@
     <title>Xperts - Sirat</title>
     <!-- security -->
     <script src="../scripts/security.js"></script>
+    <script src="../scripts/menu.js"></script>
 </head>
 <body>
-
+<!-- navigation -->
+<div id="navigation-container"></div>
+<script>
+    // Load the navigation component into the container
+    fetch('./nav.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navigation-container').innerHTML = data;
+        });
+</script>
  <img src="..\assets\svg\xperts-logo.svg" alt="xperts logo" class="logo">
 
 

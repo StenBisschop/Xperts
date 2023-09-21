@@ -1,0 +1,212 @@
+/* Hamburger menu lines */
+.toggle {
+    cursor: pointer;
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    top: 32px;
+    right: 20px;
+}
+
+.toggle span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: var(--blue);
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+}
+
+.toggle span:nth-child(1) {
+    top: 0;
+}
+
+.toggle span:nth-child(2),
+.toggle span:nth-child(3) {
+    top: 35%;
+}
+
+.toggle span:nth-child(4) {
+    top: 70%;
+}
+
+/* X state */
+.toggle.open span:nth-child(1) {
+    top: 35%;
+    width: 0;
+    left: 50%;
+}
+
+.toggle.open span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.toggle.open span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+.toggle.open span:nth-child(4) {
+    top: 35%;
+    width: 0;
+    left: 50%;
+}
+
+/* navigation */
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: .6s cubic-bezier(.77,0,.18,1);
+    background: rgba(97, 191, 193, 0.3);
+    backdrop-filter: blur(6px);
+    pointer-events: none;
+}
+
+.overlay.open {
+    opacity: 100%;
+}
+
+nav {
+    top: 20px;
+    right: 40px;
+    margin-right: 20px;
+    position: absolute;
+    overflow: hidden;
+    transition: .4s cubic-bezier(.77,0,.18,1);
+    width: 0;
+}
+
+nav.open {
+    width: 80%;
+}
+
+nav .nav-items {
+    position: relative;
+    z-index: 2;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: var(--darkest-blue);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+}
+
+nav .nav-items li {
+    /*position: relative;*/
+}
+
+nav .nav-items li a {
+    text-decoration: none;
+    font-family: var(--base-font);
+    color: var(--white);
+}
+
+nav .nav-items li a:hover {
+    color: var(--blue);
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    padding: 3px;
+    font-size: 1.5rem;
+    transform: rotate(90deg);
+    transition: all .2s cubic-bezier(.77,0,.18,1);
+}
+.dropdown-toggle.open {
+    transform: rotate(-90deg) translateY(-2px);
+    color: var(--blue);
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: all .2s cubic-bezier(.77,0,.18,1);
+    overflow: scroll;
+    margin-top: -1px;
+    border-radius: 0 0 16px 16px;
+    background-color: var(--darker-blue);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Add styles for the open state of the dropdown menu */
+.dropdown-menu.open {
+    height: 400%;
+}
+
+.dropdown-menu li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown-menu li a {
+    width: 100%;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.dropdown-menu li:nth-child(odd) {
+    background-color: var(--dark-blue);
+}
+
+/* Tablet styles */
+@media (min-width: 1000px) {
+    /* no overlay */
+    .overlay {
+        display: none;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    nav {
+        width: 300px;
+    }
+
+    nav .nav-items {
+        flex-direction: column;
+    }
+
+    nav .nav-items li {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav .nav-items li div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .dropdown-toggle {
+        padding: 10px;
+        margin: 0 20px;
+    }
+
+    .dropdown-menu {
+        position: relative;
+    }
+
+}
