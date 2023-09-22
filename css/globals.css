@@ -42,8 +42,6 @@ body {
 
 header {
     text-align: center;
-    margin-right: 400px;
-    margin-left: 50px;
 }
 
 nav {
@@ -80,6 +78,11 @@ p {
 /* Tablet styles */
 @media (min-width: 1000px) {
     main {
+        margin-right: 400px;
+        margin-left: 50px;
+    }
+
+    header {
         margin-right: 400px;
         margin-left: 50px;
     }
