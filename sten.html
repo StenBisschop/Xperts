@@ -4,34 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon  -->
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/yellow/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/yellow/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/yellow/favicon-16x16.png">
-    <link rel="manifest" href="../assets/favicon/yellow/site.webmanifest">
-    <link rel="mask-icon" href="../assets/favicon/yellow/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/yellow/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/yellow/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/yellow/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/yellow/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/yellow/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#050110">
     <meta name="theme-color" content="#050110">
     <!-- Deze link tag laad de css in -->
-    <link rel="stylesheet" href="../css/globals.css">
-    <link rel="stylesheet" href="../css/yellow.css">
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/yellow.css">
     <title>Xperts - Sten</title>
     <!-- security -->
-    <script src="../scripts/security.js"></script>
-    <script src="../scripts/menu.js"></script>
+    <script src="scripts/security.js"></script>
+    <script src="scripts/menu.js"></script>
 </head>
 <body>
 <!-- navigation -->
 <div id="navigation-container"></div>
 <script>
     // Load the navigation component into the container
-    fetch('./nav.html')
+    fetch('/nav.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('navigation-container').innerHTML = data;
         });
 </script>
 <header>
-    <img src="../assets/svg/yellow-x.svg" alt="yellow x">
+    <img src="assets/svg/yellow-x.svg" alt="yellow x">
     <h3>Sten</h3>
     <h3 class="quote">De rol van ICT in het beroepenveld van Communication Multimedia Design</h3>
 </header>
