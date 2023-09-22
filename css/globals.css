@@ -33,8 +33,17 @@
 
 /* Default styles */
 body {
+    position: relative;
     background-color: var(--black);
     background-image: url("../assets/background/base-pattern-bg.svg");
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-right: 400px;
+    margin-left: 50px;
 }
 
 nav {
@@ -66,6 +75,15 @@ p {
     font-family: var(--text-font);
     color: var(--white);
     font-size: 0.875rem;
+}
+
+/* Tablet styles */
+@media (min-width: 1000px) {
+    main {
+        margin-right: 400px;
+        margin-left: 50px;
+    }
+
 }
 
 
