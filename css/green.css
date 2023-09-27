@@ -17,8 +17,8 @@ article {
 }
 
 .content span {
-    color: var(--darker-green);
-    background-color: var(--green);
+    color: var(--green);
+    background-color: var(--darker-green);
 }
 
 .quote {
