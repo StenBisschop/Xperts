@@ -64,9 +64,7 @@
     bottom: 0;
     opacity: 0;
     transition: .6s cubic-bezier(.77,0,.18,1);
-    background: rgba(97, 191, 193, 0.3);
-    backdrop-filter: blur(6px);
-    pointer-events: none;
+    background: var(--darkest-blue);
 }
 
 .overlay.open {
@@ -83,6 +81,30 @@ nav {
     width: 0;
 }
 
+nav a:hover {
+    background: var(--blue-transparent);
+}
+
+nav .purple a:hover {
+    background: var(--purple-transparent);
+    color: var(--purple);
+}
+
+nav .yellow a:hover {
+    background: var(--yellow-transparent);
+    color: var(--yellow);
+}
+
+nav .green a:hover {
+    background: var(--green-transparent);
+    color: var(--green);
+}
+
+nav .red a:hover {
+    background: var(--red-transparent);
+    color: var(--red);
+}
+
 nav.open {
     width: 80%;
 }
@@ -94,30 +116,39 @@ nav .nav-items {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    background: var(--darkest-blue);
+    background: var(--blue-transparent);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6px);
+}
+
+nav .nav-items::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--darkest-blue-transparent);
+    filter: blur(10px);
+    z-index: -1;
 }
 
 nav .nav-items li {
-    /*position: relative;*/
+    /*padding: 10px;*/
 }
 
 nav .nav-items li a {
     text-decoration: none;
     font-family: var(--base-font);
     color: var(--white);
-}
-
-nav .nav-items li a:hover {
-    color: var(--blue);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
 }
 
 .dropdown-toggle {
     cursor: pointer;
     position: relative;
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,11 +173,11 @@ nav .nav-items li a:hover {
     overflow: scroll;
     margin-top: -1px;
     border-radius: 0 0 16px 16px;
-    background-color: var(--darker-blue);
     list-style: none;
     display: flex;
     flex-direction: column;
     align-items: center;
+    scrollbar-width: thin;
 }
 
 /* Add styles for the open state of the dropdown menu */
@@ -167,7 +198,7 @@ nav .nav-items li a:hover {
 }
 
 .dropdown-menu li:nth-child(odd) {
-    background-color: var(--dark-blue);
+    background-color: var(--dark-blue-transparent);
 }
 
 /* Tablet styles */
@@ -191,6 +222,7 @@ nav .nav-items li a:hover {
 
     nav .nav-items {
         flex-direction: column;
+        overflow: hidden;
     }
 
     nav .nav-items li {
@@ -205,6 +237,7 @@ nav .nav-items li a:hover {
     }
 
     .dropdown-toggle {
+        position: absolute;
         padding: 10px;
         margin: 0 20px;
     }
