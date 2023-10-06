@@ -6,6 +6,7 @@
     height: 20px;
     top: 32px;
     right: 20px;
+    z-index: 3;
 }
 
 .toggle span {
@@ -57,11 +58,11 @@
 
 /* navigation */
 .overlay {
-    position: absolute;
+    position: fixed;
+    height: 300px;
     top: 0;
     right: 0;
     left: 0;
-    bottom: 0;
     opacity: 0;
     transition: .6s cubic-bezier(.77,0,.18,1);
     background: var(--darkest-blue);
@@ -69,16 +70,18 @@
 
 .overlay.open {
     opacity: 100%;
+    z-index: 1;
 }
 
 nav {
     top: 20px;
     right: 40px;
     margin-right: 20px;
-    position: absolute;
+    position: fixed;
     overflow: hidden;
     transition: .4s cubic-bezier(.77,0,.18,1);
     width: 0;
+    z-index: 5;
 }
 
 nav a:hover {
@@ -128,7 +131,7 @@ nav .nav-items::before {
     width: 100%;
     height: 100%;
     background: var(--darkest-blue-transparent);
-    filter: blur(10px);
+    filter: blur(4px);
     z-index: -1;
 }
 

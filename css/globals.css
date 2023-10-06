@@ -1,5 +1,10 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Karla:ital,wght@0,200;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+/* scroll smoothing */
+html {
+    scroll-behavior: smooth;
+}
+
 /* reset standard margins and padding and box sizing, this makes styling easier */
 * {
     box-sizing: border-box;
@@ -57,13 +62,14 @@ nav {
 }
 
 /* Headings */
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: var(--base-font);
     color: var(--white);
 }
 
 h1 {
-    font-weight: 500;
+    font-weight: bold;
+    font-size: 4rem;
 }
 
 h2 {
@@ -71,15 +77,21 @@ h2 {
 }
 
 h3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 500;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 /* Paragraphs */
 p {
     font-family: var(--text-font);
     color: var(--white);
-    font-size: 0.875rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
     margin-bottom: 1rem;
 }
 
@@ -100,6 +112,14 @@ footer {
     bottom: 0px;
     right:0px;
     left: 0px;
+}
+
+ul {
+    font-family: var(--text-font);
+    color: var(--white);
+    font-size: 1rem;
+    line-height: 1.3rem;
+    margin-bottom: 1rem;
 }
 
 /* btn styling */
