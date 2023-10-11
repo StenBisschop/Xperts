@@ -1,6 +1,15 @@
-body {
-    background-image: url("../assets/background/green-pattern-bg.svg");
+body  {
+    background-image: url("../assets/images/Green/Background\ dark\ -\ Black\ sand.jpeg");
 }
+
+
+
+
+
+
+
+
+
 
 .content {
     max-width: 1000px;
@@ -26,34 +35,32 @@ article {
     font-weight: 300;
 }
 
+
+
 .waviy {
     position: relative;
-    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
-    font-size: 60px;
   }
   .waviy span {
-    font-family: 'Alfa Slab One', cursive;
     position: relative;
     display: inline-block;
+    font-size: 40px;
     color: #fff;
-    animation: waviy 1s infinite;
-    animation-delay: calc(.1s * var(--i));
-    
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
   }
-  @keyframes waviy {
-    0%,40%,100% {
-      transform: translateY(0)
-    }
-    20% {
-      transform: translateY(-20px)
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
     }
   }
+
+
 
   svg {
     display: block;
     font: 10.5em 'Montserrat';
-    width: 500px;
-    height: 100px;
+    width: 960px;
+    height: 360px;
     margin: 0 auto;
 }
 
@@ -94,3 +101,5 @@ article {
 @keyframes stroke-offset{
 	100% {stroke-dashoffset: -35%;}
 }
+
+
