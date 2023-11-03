@@ -21,6 +21,17 @@ h4 {
     color: var(--yellow);
 }
 
+i {
+    font-family: var(--text-font);
+    color: var(--white);
+    font-size: 1rem;
+    line-height: 1.3rem;
+    margin-bottom: 1rem;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
 .content h1 {
     letter-spacing: 0;
     display: block;
@@ -67,8 +78,7 @@ h4 {
 }
 
 /* Content styling */
-.content article:nth-child(3),
-.content article:nth-child(4){
+.content article.dark{
     background-color: var(--darkest-blue);
 }
 
@@ -94,6 +104,7 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .img-container img {
@@ -105,6 +116,11 @@ article {
 .img-container.small img {
     width: 50%;
     height: 50%;
+    object-fit: contain;
+}
+
+.img-container.big img {
+    width: 100%;
     object-fit: contain;
 }
 
