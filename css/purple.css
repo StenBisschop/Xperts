@@ -1,3 +1,27 @@
 body {
     background-image: url("../assets/background/purple-pattern-bg.svg");
 }
+
+header {
+    padding: 20px 0;
+}
+
+#x {
+    padding: 5px 10px;
+    background-color: var(--darker-blue);
+    border-radius: 9999px;
+}
+
+.content {
+    max-width: 1000px;
+    background-color: var(--darker-blue);
+}
+
+/* Content styling */
+.content article:nth-child(odd) {
+    background-color: var(--darkest-blue);
+}
+
+article {
+    padding: 16px;
+}
