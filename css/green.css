@@ -1,19 +1,12 @@
 body  {
-    background-image: url("../assets/images/dark-black-sand.jpeg");
+    background-image: url("../assets/background/");
 }
-
-
-
-
-
-
-
-
-
 
 .content {
     max-width: 1000px;
     background-color: var(--darker-blue);
+    border-radius: 16px;
+    overflow: hidden;
 }
 
 /* Content styling */
@@ -35,8 +28,7 @@ article {
     font-weight: 300;
 }
 
-
-
+/* Naam animatie */
 .waviy {
     position: relative;
   }
