@@ -1,0 +1,127 @@
+header {
+    padding: 20px 0;
+}
+
+.x {
+    padding: 5px 10px;
+    background-color: var(--darker-blue);
+    border-radius: 9999px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+header h3 {
+    color: var(--blue);
+}
+
+h4 {
+    color: var(--yellow);
+}
+
+i {
+    font-family: var(--text-font);
+    color: var(--white);
+    font-size: 1rem;
+    line-height: 1.3rem;
+    margin-bottom: 1rem;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.content {
+    max-width: 1000px;
+    background-color: var(--darker-blue);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.belbin-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Content styling */
+.content article.dark{
+    background-color: var(--darkest-blue);
+}
+
+.content > * {
+    grid-column: span 2 / span 2;
+}
+
+.content .two-column {
+    grid-column: span 2 / span 2;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+article {
+    padding: 16px;
+}
+
+.img-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    max-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-container.small img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+.img-container.big img {
+    width: 100%;
+    object-fit: contain;
+}
+
+/* highlight */
+.content span {
+    color: var(--yellow);
+    background-color: var(--yellow-transparent);
+}
+
+.content ul li::marker {
+    color: var(--yellow);
+}
+
+.content li {
+    margin-left: 15px;
+}
+
+.quote {
+    font-style: italic;
+    font-weight: 300;
+}
+
+
+/* Tablet styles */
+@media (min-width: 1000px) {
+    .content > * {
+        grid-column: span 1 / span 1;
+    }
+}
+
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#050110">
+    <meta name="theme-color" content="#050110">
+    <!-- Deze link tag laad de css in -->
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/blokB.css">
+    <title>Xperts - Blok B</title>
+    <!-- security -->
+    <script src="scripts/security.js"></script>
+    <script src="scripts/menu.js"></script>
+<!--gsap-->
+    <link rel="" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js">
+</head>
+<body>
+<!-- navigation -->
+<div id="navigation-container"></div>
+<script>
+    // Load the navigation component into the container
+    fetch('./nav.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navigation-container').innerHTML = data;
+        });
+</script>
+<header>
+    <img id="x1" class="x" src="assets/svg/purple-x.svg" alt="purple x">
+    <img id="x2" class="x" src="assets/svg/yellow-x.svg" alt="yellow x">
+    <img id="x3" class="x" src="assets/svg/green-x.svg" alt="green x">
+    <img id="x4" class="x" src="assets/svg/red-x.svg" alt="red x">
+    <h3>Blok B</h3>
+    <h3 class="quote">"Hoe kan Immer de klanttevredenheid verhogen en de workflow optimaliseren door effectiever om te gaan met het beheer van projectissues?"</h3>
+</header>
+<main>
+    <div class="content">
+<!--    Intro   -->
+        <article>
+            <h1>Introductie</h1>
+            <p>Wij zijn de Xperts, een projectgroep bestaande uit Sten Bisschop (Communicatie Multimedia design), Abel Ketelaars (Zorgtechnologie), Sirat Khalili (Accounting) en Max Jonkman (Automotive Engineering). Wij doen dit project voor de hogeschool Utrecht de opleiding ICT voor niet ICT’ers. Voor dit project hebben we contact opgenomen met een organisatie waar een probleem of kans(en) ligt. Wij gaan hierop in spelen met het maken van een prototype en een advies rapport. Hiervoor maken we gebruik van de methode Design thinking.</p>
+        </article>
+        <article class="img-container small dark">
+            <img src="assets/svg/xperts-logo.svg" alt="xperts logo">
+        </article>
+        <article>
+            <div class="img-container two-column big">
+                <i>Needs Value Capibility Mission</i>
+                <img src="assets/images/needs.png" alt="needs model">
+            </div>
+        </article>
+        <article class="two-column text-right">
+            <h3>Vorming van de probleemstelling</h3>
+            <p>Uit de analyse en interview van Immer is gekomen dat er een pijnpunt licht bij het issue afhandelen. In de huidige situatie is 1 werknemer verantwoordelijk voor het beheer van alle binnenkomende issues. Dit leidt ertoe dat de project manager veel tijd verdoet aan het achtervolgen van iedereen terwijl ondertussen de developers vaak niet goed geinformeerd zijn over de binnenkomende issues. Dit leidt tot enige frustratie en sommige issues blijven hierdoor lang blijven liggen (tot meer dan een jaar). Bovendien hebben de developers geen duidelijk beeld van de voortgang van elk project, waardoor ze vaak op hetzelfde project worden gezet. Dit maakt hun specialisten voor dit project maar minder flexibel inzetbaar en is voor de werknemers ook mogelijk eentonig en niet bevorderend in hun persoonlijke ontwikkeling. Na interviews met werknemers is het ook gewenst om op meerdere projecten te kunnen werken voor afwisseling en ontwikkeling.
+                Het probleem binnen Immer is het beheren van issues van alle projecten. Dit heeft invloed op de efficiëntie en effectiviteit en ontwikkeling van de werkprocessen, Dit effect trekt zich door tot de klant die soms lang kan wachten totdat de issue behandeld is.
+            </p>
+        </article>
+<!--    Ideate   -->
+        <article class="two-column dark">
+            <h1>De Ideate fase</h1>
+            <h3>Ideate ideeen:</h3>
+            <p>Binnen de groep als samen met begeleiders op de HU en in samenwerking met Immer zijn de volgende ideeën naar voren gekomen.</p>
+            <ul>
+                <li>Fysieke scrum techniek toepassen, zodat iedereen meer op de hoogte blijft van de omgaande issues.</li>
+                <li>Implementeer een geautomatiseerd meldingssysteem dat ontwikkelaars op de hoogte stelt van nieuwe issues en updates, waardoor de communicatie wordt verbeterd en de kans op gemiste problemen wordt verminderd.</li>
+                <li>Een uitgebreider en geavanceerder issue managementsysteem kan een oplossing bieden voor dit specifieke probleem, wat zal bijdragen aan de verbetering van de algehele workflow en productiviteit binnen het bedrijf.</li>
+                <li>Introduceer regelmatige korte stand-up meetings waarin elk teamlid snel de status van hun projecten en eventuele obstakels deelt. Dit bevordert de communicatie en helpt bij het identificeren van knelpunten.</li>
+                <li>Ontwikkel een standaard proces voor het prioriteren van issues op basis van hun impact op klanten en bedrijfsdoelen. Dit zorgt ervoor dat de belangrijkste problemen als eerste worden aangepakt.</li>
+                <li>Integreer machine learning en data analyse om trends in de issues te identificeren, waardoor proactief kan worden gereageerd op opkomende problemen en de algehele projectkwaliteit kan worden verbeterd.</li>
+                <li>(Niet alleen een overall issue management systeem met AI / ML erin die data analyse doet maar ook een proces aanpassing en beschrijving voor het verbeteren van de flow zonder de werkdruk te verhogen)</li>
+                <li>Het aantal kliks verkleinen van zowel klant als medewerker waardoor je met 1 applicatie meer overzicht krijgt en met behulp van plugins deze info gelijk kan doorzetten naar bijvoorbeeld programmas zoals jira</li>
+            </ul>
+        </article>
+        <article class="two-column">
+            <h1>Gekozen idee</h1>
+            <p>{gekozen idee}</p>
+        </article>
+        <article class="two-column dark">
+            <h1>Onze applicatie</h1>
+            <div class="img-container two-column big">
+                <img src="assets/images/backend.png" alt="backend structuur">
+            </div>
+            <h3>Python gedeelte</h3>
+            <p>
+                Deze applicatie biedt een eenvoudige integratie om issues uit GitLab en Jira op te halen, weer te geven en bij te werken. De backend is gebouwd met Flask en biedt endpoints voor webhooks, het ophalen van gesorteerde en gefilterde issues, en het bijwerken van issues.
+            </p>
+        </article>
+        <article>
+            <h1>wireframes</h1>
+        </article>
+        <div class="img-container two-column big">
+            <img src="assets/images/wire1.png" alt="wireframe">
+        </div>
+        <div class="img-container two-column big">
+            <img src="assets/images/wire2.png" alt="wireframe">
+        </div>
+        <div class="img-container two-column big">
+            <img src="assets/images/wire3.png" alt="wireframe">
+        </div>
+        <article class="dark two-column">
+            <h1>wireframe / design verbetering</h1>
+        </article>
+        <article class="dark img-container two-column big">
+            <img src="assets/images/design1.png" alt="design">
+        </article>
+        <article class="dark img-container two-column big">
+            <img src="assets/images/design2.png" alt="design">
+        </article>
+<!--   Prototype     -->
+        <article class="two-column">
+            <h1>Prototype</h1>
+            <div class="img-container two-column big">
+                <i>Data die ontvangen wordt door de python applicatie (alle Jira en Gitlab issues)</i>
+                <img src="assets/images/prototype-python.png" alt="python">
+            </div>
+        </article>
+    </div>
+</main>
+</body>
+</html>
